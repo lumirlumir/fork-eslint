@@ -25,10 +25,12 @@ All of these options give you fine-grained control over how ESLint treats your c
 
 [**Configuration Files**](configuration-files)
 
-* [Configuration File Format](./configuration-files#configuration-file)
+* [Configuration File](./configuration-files#configuration-file)
 * [Configuration Objects](./configuration-files#configuration-objects)
 * [Configuring Shared Settings](./configuration-files#configuring-shared-settings)
+* [Using a Shareable Configuration Package](./configuration-files#using-a-shareable-configuration-package)
 * [Configuration File Resolution](./configuration-files#configuration-file-resolution)
+* [TypeScript Configuration Files](./configuration-files#typescript-configuration-files)
 
 [**Configure Language Options**](language-options)
 

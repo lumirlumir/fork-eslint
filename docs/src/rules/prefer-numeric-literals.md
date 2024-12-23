@@ -14,7 +14,7 @@ The `parseInt()` and `Number.parseInt()` functions can be used to turn binary, o
 
 ## Rule Details
 
-This rule disallows calls to `parseInt()` or `Number.parseInt()` if called with two arguments: a string; and a radix option of 2 (binary), 8 (octal), or 16 (hexadecimal).
+This rule disallows calls to `parseInt()` or `Number.parseInt()` if called with two arguments: a string; and a radix option of `2` (binary), `8` (octal), or `16` (hexadecimal).
 
 Examples of **incorrect** code for this rule:
 

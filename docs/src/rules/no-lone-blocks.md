@@ -12,7 +12,7 @@ In JavaScript, prior to ES6, standalone code blocks delimited by curly braces do
 }
 ```
 
-In ES6, code blocks may create a new scope if a block-level binding (`let` and `const`), a class declaration or a function declaration (in strict mode) are present. A block is not considered redundant in these cases.
+In ES6, code blocks may create a new scope if a block-level binding (`let` and `const`), a `class` declaration or a `function` declaration (in `strict` mode) are present. A block is not considered redundant in these cases.
 
 ## Rule Details
 
@@ -111,7 +111,7 @@ class C {
 
 :::
 
-Examples of **correct** code for this rule with ES6 environment and strict mode via `"parserOptions": { "sourceType": "module" }` in the ESLint configuration or `"use strict"` directive in the code:
+Examples of **correct** code for this rule with ES6 environment and `strict` mode via `"parserOptions": { "sourceType": "module" }` in the ESLint configuration or `"use strict"` directive in the code:
 
 ::: correct
 

@@ -6,13 +6,13 @@ extra_typescript_info: Note that, technically, TypeScript will only catch this i
 ---
 
 
-Under the strict mode, `this` keywords outside of classes or class-like objects might be `undefined` and raise a `TypeError`.
+Under the `strict` mode, `this` keywords outside of classes or class-like objects might be `undefined` and raise a `TypeError`.
 
 ## Rule Details
 
 This rule aims to flag usage of `this` keywords in contexts where the value of `this` is `undefined`.
 
-Top-level `this` in scripts is always considered valid because it refers to the global object regardless of the strict mode.
+Top-level `this` in scripts is always considered valid because it refers to the global object regardless of the `strict` mode.
 
 Top-level `this` in ECMAScript modules is always considered invalid because its value is `undefined`.
 
@@ -32,7 +32,7 @@ This rule judges from following conditions whether or not the function is a meth
 
 And this rule allows `this` keywords in functions below:
 
-* The `call/apply/bind` method of the function is called directly.
+* The `call`/`apply`/`bind` method of the function is called directly.
 * The function is a callback of array methods (such as `.forEach()`) if `thisArg` is given.
 * The function has `@this` tag in its JSDoc comment.
 
@@ -44,10 +44,10 @@ And this rule always allows `this` keywords in the following contexts:
 
 Otherwise are considered problems.
 
-This rule applies **only** in strict mode.
-With `"parserOptions": { "sourceType": "module" }` in the ESLint configuration, your code is in strict mode even without a `"use strict"` directive.
+This rule applies **only** in `strict` mode.
+With `"parserOptions": { "sourceType": "module" }` in the ESLint configuration, your code is in `strict` mode even without a `"use strict"` directive.
 
-Examples of **incorrect** code for this rule in strict mode:
+Examples of **incorrect** code for this rule in `strict` mode:
 
 ::: incorrect { "sourceType": "script" }
 
@@ -94,7 +94,7 @@ foo.forEach(function() {
 
 :::
 
-Examples of **correct** code for this rule in strict mode:
+Examples of **correct** code for this rule in `strict` mode:
 
 ::: correct { "sourceType": "script" }
 

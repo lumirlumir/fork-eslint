@@ -84,7 +84,7 @@ This rule has an object option:
 
 ### allowAsStatement
 
-When `allowAsStatement` is set to true, the rule will not error on cases that the void operator is used as a statement, i.e. when it's not used in an expression position, like in a variable assignment or a function return.
+When `allowAsStatement` is set to `true`, the rule will not error on cases that the `void` operator is used as a statement, i.e. when it's not used in an expression position, like in a variable assignment or a function return.
 
 Examples of **incorrect** code for `{ "allowAsStatement": true }`:
 

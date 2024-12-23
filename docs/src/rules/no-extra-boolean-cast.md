@@ -3,7 +3,7 @@ title: no-extra-boolean-cast
 rule_type: suggestion
 ---
 
-In contexts such as an `if` statement's test where the result of the expression will already be coerced to a Boolean, casting to a Boolean via double negation (`!!`) or a `Boolean` call is unnecessary. For example, these `if` statements are equivalent:
+In contexts such as an `if` statement's test where the result of the expression will already be coerced to a `Boolean`, casting to a `Boolean` via double negation (`!!`) or a `Boolean` call is unnecessary. For example, these `if` statements are equivalent:
 
 ```js
 if (!!foo) {
@@ -21,7 +21,7 @@ if (foo) {
 
 ## Rule Details
 
-This rule disallows unnecessary boolean casts.
+This rule disallows unnecessary `Boolean` casts.
 
 Examples of **incorrect** code for this rule:
 
@@ -134,7 +134,7 @@ Examples of **correct** code for this rule with `"enforceForInnerExpressions"` o
 ```js
 /*eslint no-extra-boolean-cast: ["error", {"enforceForInnerExpressions": true}]*/
 
-// Note that `||` and `&&` alone aren't a boolean context for either operand 
+// Note that `||` and `&&` alone aren't a boolean context for either operand
 // since the resultant value need not be a boolean without casting.
 var foo = !!bar || baz;
 

@@ -14,7 +14,7 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
-In this case, you would expect each function created within the loop to return a different number. In reality, each function returns 10, because that was the last value of `i` in the scope.
+In this case, you would expect each function created within the loop to return a different number. In reality, each `function` returns `10`, because that was the last value of `i` in the scope.
 
 `let` or `const` mitigate this problem.
 
@@ -26,7 +26,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-In this case, each function created within the loop returns a different number as expected.
+In this case, each `functio`n created within the loop returns a different number as expected.
 
 ## Rule Details
 

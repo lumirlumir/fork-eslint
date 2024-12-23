@@ -9,11 +9,11 @@ further_reading:
 - https://github.com/tc39/proposal-class-static-block
 ---
 
-Empty static blocks, while not technically errors, usually occur due to refactoring that wasn't completed. They can cause confusion when reading code.
+Empty `static` blocks, while not technically errors, usually occur due to refactoring that wasn't completed. They can cause confusion when reading code.
 
 ## Rule Details
 
-This rule disallows empty static blocks. This rule ignores static blocks which contain a comment.
+This rule disallows empty `static` blocks. This rule ignores `static` blocks which contain a comment.
 
 Examples of **incorrect** code for this rule:
 

@@ -14,7 +14,7 @@ var foo = "Copyright \251";
 
 This rule disallows octal escape sequences in string literals.
 
-If ESLint parses code in strict mode, the parser (instead of this rule) reports the error.
+If ESLint parses code in `strict` mode, the parser (instead of this rule) reports the error.
 
 Examples of **incorrect** code for this rule:
 

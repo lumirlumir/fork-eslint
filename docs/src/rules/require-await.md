@@ -24,7 +24,7 @@ async function fetchData(processDataItem) {
 
 Asynchronous functions that don't use `await` might not need to be asynchronous functions and could be the unintentional result of refactoring.
 
-Note: this rule ignores async generator functions. This is because generators yield rather than return a value and async generators might yield all the values of another async generator without ever actually needing to use await.
+**Note:** this rule ignores async generator functions. This is because generators yield rather than return a value and async generators might yield all the values of another async generator without ever actually needing to use `await`.
 
 ## Rule Details
 
@@ -79,7 +79,7 @@ async function noop() {}
 
 ## When Not To Use It
 
-Asynchronous functions are designed to work with promises such that throwing an error will cause a promise's rejection handler (such as `catch()`) to be called. For example:
+Asynchronous functions are designed to work with Promises such that throwing an error will cause a Promise's rejection handler (such as `catch()`) to be called. For example:
 
 ```js
 async function fail() {
@@ -91,6 +91,6 @@ fail().catch(error => {
 });
 ```
 
-In this case, the `fail()` function throws an error that is intended to be caught by the `catch()` handler assigned later. Converting the `fail()` function into a synchronous function would require the call to `fail()` to be refactored to use a `try-catch` statement instead of a promise.
+In this case, the `fail()` function throws an error that is intended to be caught by the `catch()` handler assigned later. Converting the `fail()` function into a synchronous function would require the call to `fail()` to be refactored to use a `try-catch` statement instead of a Promise.
 
 If you are throwing an error inside of an asynchronous function for this purpose, then you may want to disable this rule.

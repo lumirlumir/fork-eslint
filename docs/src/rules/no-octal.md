@@ -17,7 +17,7 @@ Because the leading zero which identifies an octal literal has been a source of 
 
 The rule disallows octal literals.
 
-If ESLint parses code in strict mode, the parser (instead of this rule) reports the error.
+If ESLint parses code in `strict` mode, the parser (instead of this rule) reports the error.
 
 Examples of **incorrect** code for this rule:
 
