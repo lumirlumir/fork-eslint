@@ -1,6 +1,8 @@
 ---
 title: no-eq-null
 rule_type: suggestion
+related_rules:
+- eqeqeq
 ---
 
 
